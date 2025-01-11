@@ -1,0 +1,122 @@
+/* =============================== ESTILO GENERAL =============================== */
+
+/* Estilo general para el fondo de la raíz */
+#root {
+    -fx-background-color: #000000; /* Fondo negro */
+    -fx-font-family: monospace; /* Fuente monospace */
+    -fx-spacing: 5px; /* Espaciado horizontal y vertical entre botones */
+}
+
+/* ============================== ESTILO PARA LA PANTALLA ============================== */
+
+/* Estilo para el TextField de la pantalla */
+#pantalla {
+    -fx-background-color: transparent; /* Fondo transparente */
+    -fx-font-size: 25px; /* Tamaño de fuente 25px */
+    -fx-font-weight: bold; /* Fuente en negrita */
+    -fx-border-width: 0px; /* Sin borde */
+    -fx-alignment: center-right; /* Alineado a la derecha */
+    -fx-padding: 10px; /* Relleno de 10px por todos los lados */
+    -fx-text-fill: #ffffff; /* Texto blanco */
+}
+
+/* ============================== ESTILO PARA LOS BOTONES ============================== */
+
+/* Estilo general para los botones numéricos (0-9, coma) */
+#button0, #button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9, #buttonComa {
+    -fx-background-color: #8A9597; /* Fondo gris */
+    -fx-text-fill: #ffffff; /* Texto blanco */
+    -fx-font-size: 16px; /* Tamaño de fuente 16px */
+    -fx-background-radius: 5em; /* Radio de fondo 5em */
+    -fx-border-radius: 5em; /* Radio de borde 5em */
+    -fx-padding: 5px; /* Relleno de 5px por todos los lados */
+    -fx-border-width: 0px; /* Sin borde */
+}
+
+/* ============================== ESTILO PARA LOS BOTONES ESPECIALES ============================== */
+
+/* Estilo común para los botones especiales (CE, C, operadores) */
+#buttonCE, #buttonC, #buttonMultiplicar, #buttonRestar, #buttonSumar, #buttonDividir, #buttonIgual {
+    -fx-font-size: 16px; /* Tamaño de fuente 16px */
+    -fx-background-radius: 5em; /* Radio de fondo 5em */
+    -fx-border-radius: 5em; /* Radio de borde 5em */
+    -fx-padding: 5px; /* Relleno de 5px por todos los lados */
+    -fx-border-width: 0px; /* Sin borde */
+}
+
+/* ============================== ESTILO AL PASAR EL RATÓN ============================== */
+
+/* Botones numéricos al pasar el ratón encima */
+#button0:hover, #button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover, #button6:hover, #button7:hover, #button8:hover, #button9:hover {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-text-fill: #3e3e3e; /* Texto gris oscuro */
+}
+
+/* ============================== ESTILO AL HACER CLIC ============================== */
+
+/* Botones numéricos pulsados */
+#button0:pressed, #button1:pressed, #button2:pressed, #button3:pressed, #button4:pressed, #button5:pressed, #button6:pressed, #button7:pressed, #button8:pressed, #button9:pressed {
+    -fx-background-color: #000000; /* Fondo negro */
+    -fx-text-fill: #d3d3d3; /* Texto gris claro */
+}
+
+/* ============================== ESTILO PARA LOS BOTONES DE OPERACIÓN ============================== */
+
+/* Botones de operaciones (multiplicación, división, resta, suma) */
+#buttonMultiplicar, #buttonDividir, #buttonRestar, #buttonSumar {
+    -fx-background-color: #ff9800; /* Fondo naranja */
+    -fx-text-fill: #ffffff; /* Texto blanco */
+}
+
+/* Botón igual (=) */
+#buttonIgual {
+    -fx-background-color: #ff6600; /* Fondo naranja */
+    -fx-text-fill: #ffffff; /* Texto blanco */
+}
+
+/* ============================== ESTILO PARA LOS BOTONES DE REINICIO (CE, C) ============================== */
+
+/* Botones de reinicio (CE, C) */
+#buttonCE, #buttonC {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+}
+
+/* ============================== ESTILO AL PASAR EL RATÓN POR LOS BOTONES ESPECIALES ============================== */
+
+/* Botones de reinicio (CE, C) con ratón encima */
+#buttonCE:hover, #buttonC:hover {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Botones de operación con ratón encima (por defecto) */
+#buttonMultiplicar:hover:default, #buttonDividir:hover:default, #buttonRestar:hover:default, #buttonSumar:hover:default {
+    -fx-background-color: #ff3d00; /* Fondo rojo */
+}
+
+/* ============================== ESTILO AL HACER CLIC EN LOS BOTONES DE OPERACIÓN ============================== */
+
+/* Botones de operación pulsados */
+#buttonMultiplicar:pressed, #buttonDividir:pressed, #buttonRestar:pressed, #buttonSumar:pressed {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-text-fill: #ff9800; /* Texto naranja */
+}
+
+/* ============================== ESTILO PARA EL BOTÓN IGUAL ============================== */
+
+/* Botón igual (pulsado) */
+#buttonIgual:pressed {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-text-fill: #ff4500; /* Texto rojo anaranjado */
+}
+
+/* ============================== ESTILO PARA LOS BOTONES CON FOCO Y ARMADOS ============================== */
+
+/* Estilo para los botones con foco */
+#button:focused {
+    -fx-border-color: #ffffff; /* Color de borde blanco */
+}
+
+/* Estilo para los botones armados */
+#button:armed {
+    -fx-border-color: #ffff00; /* Color de borde amarillo */
+}
